@@ -29,7 +29,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'jbuilder', '~> 2.9', '>= 2.9.1'
   
   spec.add_dependency "pg"
-  spec.add_development_dependency 'rspec-rails', '~> 3.8', '>= 3.8.2'
+  spec.add_development_dependency 'rspec-rails', '>= 3.8.2', '~> 5.0'
   spec.add_development_dependency 'sqlite3', '~> 1.4', '>= 1.4.1'
   spec.add_development_dependency 'factory_bot_rails', '~> 5.0', '>= 5.0.2'
   spec.add_development_dependency 'json_matchers', '~> 0.11.0'
