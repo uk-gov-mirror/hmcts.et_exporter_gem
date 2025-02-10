@@ -34,6 +34,8 @@ FactoryBot.define do
       reference { "222000000300" }
       number_of_claimants { 1 }
       number_of_respondents { 1 }
+      case_heard_by_preference { 'judge' }
+      case_heard_by_preference_reason { "I feel intimidated by a panel" }
     end
 
 
