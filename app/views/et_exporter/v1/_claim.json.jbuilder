@@ -3,6 +3,7 @@ json.(claim, :desired_outcomes, :discrimination_claims, :is_unfair_dismissal, :j
 json.(claim, :is_unfair_dismissal, :office_code, :other_claim_details, :other_known_claimant_names, :other_outcome)
 json.(claim, :pay_claims, :send_claim_to_whistleblowing_entity, :submission_channel, :submission_reference)
 json.(claim, :case_heard_by_preference, :case_heard_by_preference_reason) if claim.respond_to? :case_heard_by_preference_reason
+json.(claim, :last_event_date) if claim.respond_to? :last_event_date
 if claim.employment_details.present?
   json.employment_details do
     json.partial! "et_exporter/v1/employment_details", employment: claim.employment_details, formats: [:json]
